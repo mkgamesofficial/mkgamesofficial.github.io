@@ -1,30 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>MK GAMES</title>
-<style>
-  body{ margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
-        background:#05030f; color:#e9e6ff; font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; text-align:center; }
-  main{ padding:32px 20px; max-width:520px; }
-  h1{ margin:0 0 4px; font-size:40px; letter-spacing:6px; color:#25e6ff; }
-  h2{ margin:28px 0 8px; font-size:22px; }
-  p{ margin:0 0 12px; line-height:1.5; color:#b9b4d6; }
-  a{ color:#ff4fd8; }
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MK GAMES: Mobile games</title>
+<meta name="description" content="MK GAMES makes mobile games that are easy to pick up: Paradox Block, CyberOrb and MagneGap.">
+<meta property="og:title" content="MK GAMES">
+<meta property="og:description" content="Easy play, fun times. Paradox Block, CyberOrb and MagneGap.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mkgamesofficial.github.io/">
+<meta property="og:image" content="https://mkgamesofficial.github.io/assets/paradox-block/en/feature.jpg">
+<meta name="theme-color" content="#0b0b10">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/saira.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-<main>
-  <h1>MK GAMES</h1>
-  <p>Mobile games</p>
+<body data-title-tr="MK GAMES: Mobil oyunlar">
+<a class="skip" href="#games" data-tr="Oyunlara geç">Skip to games</a>
+<div class="bar">
+  <div class="wrap">
+    <a class="bar-logo" href="#top" aria-label="MK GAMES"><img src="assets/mk-games.png" width="465" height="201" alt="MK GAMES"></a>
+    <nav data-tr-label="Ana menü" aria-label="Main">
+      <a class="opt" href="#games" data-tr="Oyunlar">Games</a>
+      <a href="#privacy" data-tr="Gizlilik">Privacy</a>
+      <a href="#contact" data-tr="İletişim">Contact</a>
+    </nav>
+    <div class="lang" role="group" data-tr-label="Dil" aria-label="Language">
+      <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    </div>
+  </div>
+</div>
 
-  <h2>Paradox Block: Neon Puzzle</h2>
-  <p>Place neon blocks, blast lines, rewind time and beat your high score!</p>
-  <p><a href="https://sites.google.com/view/paradoxblockprivacypolicy/ana-sayfa">Privacy Policy</a></p>
+<main id="top">
+  <section class="hero">
+    <svg class="speed" viewBox="0 0 400 200" aria-hidden="true"><g fill="#ffc60a"><rect x="120" y="14" width="280" height="30" rx="15"/><rect x="70" y="62" width="330" height="30" rx="15"/><circle cx="30" cy="77" r="15"/><rect x="100" y="110" width="300" height="30" rx="15"/><circle cx="56" cy="125" r="15"/><rect x="170" y="158" width="230" height="30" rx="15"/></g></svg>
+    <div class="wrap">
+      <div>
+        <h1 data-tr="Kolay oyna, <em>iyi eğlen.</em>">Easy play, <em>fun times.</em></h1>
+        <p class="hero-text" data-tr="MK GAMES, saniyeler içinde öğrenilen ve bırakması zor mobil oyunlar yapıyor. Üç oyunumuzu aşağıda bulabilirsin.">MK GAMES makes mobile games you can learn in seconds and find hard to put down. Here are our three games.</p>
+      </div>
+      <div class="picks" id="games">
+        <a class="pick" style="--pick:#ff4fd8" href="#paradox-block"><img src="assets/paradox-block/icon.png" width="256" height="256" alt=""><span><b>Paradox Block</b><small data-tr="Neon blokları yerleştir, zamanı geri sar">Place neon blocks, rewind time</small></span><svg viewBox="0 0 14 20" aria-hidden="true"><path fill="currentColor" d="M0 2.200C0 .6 1.800-.4 3.100.5l10 7.800c1 .8 1 2.600 0 3.400l-10 7.800C1.800 20.400 0 19.400 0 17.800v-3.300c0-.6.3-1.200.8-1.600l1.600-1.300c1-.8 1-2.400 0-3.200L.8 7.100C.3 6.700 0 6.100 0 5.500z"/></svg></a>
+        <a class="pick" style="--pick:#5fe3cb" href="#cyberorb"><img src="assets/cyberorb/icon.png" width="256" height="256" alt=""><span><b>CyberOrb</b><small data-tr="Topu sür, zıpla, Hiper’e geç">Roll, jump and go Hyper</small></span><svg viewBox="0 0 14 20" aria-hidden="true"><path fill="currentColor" d="M0 2.200C0 .6 1.800-.4 3.100.5l10 7.800c1 .8 1 2.600 0 3.400l-10 7.800C1.800 20.400 0 19.400 0 17.800v-3.300c0-.6.3-1.200.8-1.600l1.600-1.300c1-.8 1-2.400 0-3.200L.8 7.100C.3 6.700 0 6.100 0 5.500z"/></svg></a>
+        <a class="pick" style="--pick:#ffd21f" href="#magnegap"><img src="assets/magnegap/icon.png" width="256" height="256" alt=""><span><b>MagneGap</b><small data-tr="Kutbu çevir, boşluktan geç">Flip polarity, slip through the gap</small></span><svg viewBox="0 0 14 20" aria-hidden="true"><path fill="currentColor" d="M0 2.200C0 .6 1.800-.4 3.100.5l10 7.800c1 .8 1 2.600 0 3.400l-10 7.800C1.800 20.400 0 19.400 0 17.800v-3.300c0-.6.3-1.200.8-1.600l1.600-1.300c1-.8 1-2.400 0-3.200L.8 7.100C.3 6.700 0 6.100 0 5.500z"/></svg></a>
+      </div>
+    </div>
+  </section>
 
-  <h2>Contact</h2>
-  <p><a href="mailto:mkgames.feedback@gmail.com">mkgames.feedback@gmail.com</a></p>
+  <section class="game t-paradox" id="paradox-block" aria-labelledby="paradox-block-title">
+    <div class="wrap">
+      <header class="game-head">
+        <img src="assets/paradox-block/icon.png" width="256" height="256" loading="lazy" alt="Paradox Block icon" data-tr-alt="Paradox Block simgesi">
+        <div>
+          <div class="kicker" data-tr="Blok bulmaca">Block puzzle</div>
+          <h2 id="paradox-block-title">Paradox <span>Block</span></h2>
+        </div>
+      </header>
+      <div class="game-body">
+        <div>
+          <p class="lead" data-tr="Blokları 8×8 tahtaya yerleştir, dolan satır ve sütunları patlat, puanını katla.">Place blocks on the 8×8 board, blast full rows and columns, and multiply your score.</p>
+          <ul class="features">
+            <li data-tr="&lt;b&gt;Kombo zinciri.&lt;/b&gt; Art arda patlat, çarpanını x1.5, x2.0, x2.5 diye yükselt."><b>Chain combos.</b> Keep clearing to push your multiplier to x1.5, x2.0, x2.5 and beyond.</li>
+            <li data-tr="&lt;b&gt;Zamanı geri sar.&lt;/b&gt; Hata mı yaptın? Son hamlelerini geri al, CHRONO bonusu kazan."><b>Rewind time.</b> Made a mistake? Undo your last moves and earn a CHRONO bonus.</li>
+            <li data-tr="&lt;b&gt;Blok değiştir.&lt;/b&gt; Sığmayan blok mu geldi? Daha iyisiyle değiştir."><b>Swap pieces.</b> Got a block that won’t fit? Trade it for a better one.</li>
+            <li data-tr="&lt;b&gt;Günlük görevler ve neon temalar.&lt;/b&gt; Her gün yeni görev, zevkine göre renkler."><b>Daily quests and neon themes.</b> New goals every day, colours to your taste.</li>
+          </ul>
+          <ul class="facts">
+            <li data-tr="İnternetsiz oynanır">Plays offline</li>
+            <li data-tr="5 dil">5 languages</li>
+            <li data-tr="Süre sınırı yok">No timer</li>
+          </ul>
+          <div class="cta">
+          <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.paradoxblock.app" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.900v18.200c0 .7.8 1.200 1.400.8l15.900-9.100c.6-.4.6-1.200 0-1.600L5.400 2.100C4.800 1.700 4 2.200 4 2.900z"/></svg><span data-tr="Google Play’den indir">Get it on Google Play</span></a>
+          <a class="btn" href="privacy/paradox-block.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/></svg><span data-tr="Gizlilik politikası">Privacy policy</span></a>
+          </div>
+        </div>
+        <img class="poster" src="assets/paradox-block/en/feature.jpg" data-lang-src="assets/paradox-block/{lang}/feature.jpg" width="1024" height="500" loading="lazy" decoding="async" alt="Paradox Block banner" data-tr-alt="Paradox Block tanıtım görseli">
+      </div>
+      <div class="shots">
+        <button class="shot" type="button" data-tr-label="Satırları patlatıp yüksek puan alma, büyüt" aria-label="Clearing lines for a big score, enlarge"><img src="assets/paradox-block/en/1.jpg" data-lang-src="assets/paradox-block/{lang}/1.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Clearing lines for a big score" data-tr-alt="Satırları patlatıp yüksek puan alma"></button>
+        <button class="shot" type="button" data-tr-label="Kombo çarpanını yükseltme, büyüt" aria-label="Building a combo multiplier, enlarge"><img src="assets/paradox-block/en/2.jpg" data-lang-src="assets/paradox-block/{lang}/2.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Building a combo multiplier" data-tr-alt="Kombo çarpanını yükseltme"></button>
+        <button class="shot" type="button" data-tr-label="Son hamleleri geri sarma, büyüt" aria-label="Rewinding the last moves, enlarge"><img src="assets/paradox-block/en/3.jpg" data-lang-src="assets/paradox-block/{lang}/3.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Rewinding the last moves" data-tr-alt="Son hamleleri geri sarma"></button>
+        <button class="shot" type="button" data-tr-label="Blok değiştirme, büyüt" aria-label="Swapping a block, enlarge"><img src="assets/paradox-block/en/4.jpg" data-lang-src="assets/paradox-block/{lang}/4.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Swapping a block" data-tr-alt="Blok değiştirme"></button>
+        <button class="shot" type="button" data-tr-label="Günlük görevler ekranı, büyüt" aria-label="Daily quests screen, enlarge"><img src="assets/paradox-block/en/5.jpg" data-lang-src="assets/paradox-block/{lang}/5.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Daily quests screen" data-tr-alt="Günlük görevler ekranı"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="game t-cyber" id="cyberorb" aria-labelledby="cyberorb-title">
+    <div class="wrap">
+      <header class="game-head">
+        <img src="assets/cyberorb/icon.png" width="256" height="256" loading="lazy" alt="CyberOrb icon" data-tr-alt="CyberOrb simgesi">
+        <div>
+          <div class="kicker" data-tr="Sonsuz koşu · Polygon Drift">Endless runner · Polygon Drift</div>
+          <h2 id="cyberorb-title">Cyber<span>Orb</span></h2>
+        </div>
+      </header>
+      <div class="game-body">
+        <div>
+          <p class="lead" data-tr="Gece göğünde uzanan sonsuz bir pist, bir top ve gittikçe artan hız.">An endless track across the night sky, one ball, and a speed that never stops climbing.</p>
+          <ul class="features">
+            <li data-tr="&lt;b&gt;Tek parmakla oynanır.&lt;/b&gt; Sürükleyerek yön ver, yukarı kaydırarak zıpla, çift dokunarak Hiper’e geç."><b>One-finger controls.</b> Drag to steer, swipe up to jump, double tap for Hyper.</li>
+            <li data-tr="&lt;b&gt;Hiper modu.&lt;/b&gt; 6 saniye boyunca her engeli parçala."><b>Hyper mode.</b> Smash through every obstacle for 6 seconds.</li>
+            <li data-tr="&lt;b&gt;Zorlaşan pist.&lt;/b&gt; Yükselen sütunlar, dönen lazerler, kayan bloklar, dar köprüler ve zamanlı kapılar."><b>A track that fights back.</b> Rising pillars, spinning lasers, sliding blocks, narrow bridges and timed gates.</li>
+            <li data-tr="&lt;b&gt;Topla ve aç.&lt;/b&gt; Kristaller yeni topları açar, her topun kendine özel bir izi var."><b>Collect and unlock.</b> Crystals open new balls, and every ball leaves its own trail.</li>
+          </ul>
+          <ul class="facts">
+            <li data-tr="Türkçe ve İngilizce">English and Turkish</li>
+            <li data-tr="Tek parmakla">One-finger play</li>
+          </ul>
+          <div class="cta">
+          <!-- Google Play'de yayınlanınca bu span yerine Paradox Block'taki gibi şu linki koy: https://play.google.com/store/apps/details?id=com.cyberorb.polygondrift -->
+          <span class="btn btn-soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.900v18.200c0 .7.8 1.200 1.400.8l15.900-9.100c.6-.4.6-1.200 0-1.600L5.400 2.100C4.800 1.700 4 2.200 4 2.900z"/></svg><span data-tr="Yakında Google Play’de">Coming soon to Google Play</span></span>
+          <a class="btn" href="privacy/cyberorb.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/></svg><span data-tr="Gizlilik politikası">Privacy policy</span></a>
+          </div>
+        </div>
+        <img class="poster" src="assets/cyberorb/feature.jpg" width="1024" height="500" loading="lazy" decoding="async" alt="CyberOrb banner" data-tr-alt="CyberOrb tanıtım görseli">
+      </div>
+      <div class="shots">
+        <button class="shot" type="button" data-tr-label="Pistte engellerden kaçma, büyüt" aria-label="Dodging obstacles on the track, enlarge"><img src="assets/cyberorb/en/1.jpg" data-lang-src="assets/cyberorb/{lang}/1.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Dodging obstacles on the track" data-tr-alt="Pistte engellerden kaçma"></button>
+        <button class="shot" type="button" data-tr-label="Hiper modunda engelleri parçalama, büyüt" aria-label="Hyper mode smashing obstacles, enlarge"><img src="assets/cyberorb/en/2.jpg" data-lang-src="assets/cyberorb/{lang}/2.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Hyper mode smashing obstacles" data-tr-alt="Hiper modunda engelleri parçalama"></button>
+        <button class="shot" type="button" data-tr-label="Zorlaşan pist, büyüt" aria-label="The track getting harder, enlarge"><img src="assets/cyberorb/en/3.jpg" data-lang-src="assets/cyberorb/{lang}/3.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="The track getting harder" data-tr-alt="Zorlaşan pist"></button>
+        <button class="shot" type="button" data-tr-label="Açılabilen top koleksiyonu, büyüt" aria-label="Collection of unlockable balls, enlarge"><img src="assets/cyberorb/en/4.jpg" data-lang-src="assets/cyberorb/{lang}/4.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Collection of unlockable balls" data-tr-alt="Açılabilen top koleksiyonu"></button>
+        <button class="shot" type="button" data-tr-label="Oyun içi mağaza, büyüt" aria-label="In-game shop, enlarge"><img src="assets/cyberorb/en/5.jpg" data-lang-src="assets/cyberorb/{lang}/5.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="In-game shop" data-tr-alt="Oyun içi mağaza"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="game t-magne" id="magnegap" aria-labelledby="magnegap-title">
+    <div class="wrap">
+      <header class="game-head">
+        <img src="assets/magnegap/icon.png" width="256" height="256" loading="lazy" alt="MagneGap icon" data-tr-alt="MagneGap simgesi">
+        <div>
+          <div class="kicker" data-tr="Tek dokunuşlu arcade">One-tap arcade</div>
+          <h2 id="magnegap-title">Magne<span>Gap</span></h2>
+        </div>
+      </header>
+      <div class="game-body">
+        <div>
+          <p class="lead" data-tr="Bir mıknatıs top, N tavanı ile S tabanı arasında yarışıyor. Her dokunuşta kutbu değişir ve karşı raya fırlar.">A magnetic ball races between the N ceiling and the S floor. Every tap flips its polarity and launches it to the opposite rail.</p>
+          <ul class="features">
+            <li data-tr="&lt;b&gt;Tek dokunuş, sonsuz heyecan.&lt;/b&gt; Öğrenmesi kolay, hızlandıkça her dokunuş önem kazanır."><b>One tap, endless thrills.</b> Easy to learn, and every tap counts as the speed climbs.</li>
+            <li data-tr="&lt;b&gt;Her şeyden kaç.&lt;/b&gt; Elektrikli dikenler, gidip gelen mayınlar, dönen rotorlar ve ray lazerleri."><b>Dodge everything.</b> Electric spikes, swinging mines, spinning rotors and rail lasers.</li>
+            <li data-tr="&lt;b&gt;Yeni bölgeler.&lt;/b&gt; Puanın arttıkça renkler ve hız değişir."><b>New zones.</b> Push your score higher for fresh colours and faster speeds.</li>
+            <li data-tr="&lt;b&gt;16 eşsiz top.&lt;/b&gt; Altın topla; Neon Çekirdek, Satürn, Magma, Kara Delik ve dahasını aç."><b>16 unique balls.</b> Collect gold to unlock Neon Core, Saturn, Magma, Black Hole and more.</li>
+          </ul>
+          <ul class="facts">
+            <li data-tr="İnternetsiz oynanır">Plays offline</li>
+            <li data-tr="Türkçe ve İngilizce">English and Turkish</li>
+            <li data-tr="Kısa öğretici">Quick tutorial</li>
+          </ul>
+          <div class="cta">
+          <!-- Google Play'de yayınlanınca bu span yerine Paradox Block'taki gibi şu linki koy: https://play.google.com/store/apps/details?id=com.mkgames.magnegap -->
+          <span class="btn btn-soon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.900v18.200c0 .7.8 1.200 1.400.8l15.900-9.100c.6-.4.6-1.200 0-1.600L5.400 2.100C4.800 1.700 4 2.200 4 2.900z"/></svg><span data-tr="Yakında Google Play’de">Coming soon to Google Play</span></span>
+          <a class="btn" href="privacy/magnegap.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/></svg><span data-tr="Gizlilik politikası">Privacy policy</span></a>
+          </div>
+        </div>
+        <img class="poster" src="assets/magnegap/en/feature.jpg" data-lang-src="assets/magnegap/{lang}/feature.jpg" width="1024" height="500" loading="lazy" decoding="async" alt="MagneGap banner" data-tr-alt="MagneGap tanıtım görseli">
+      </div>
+      <div class="shots">
+        <button class="shot" type="button" data-tr-label="Dikenler arasında kutup değiştirme, büyüt" aria-label="Flipping polarity between spikes, enlarge"><img src="assets/magnegap/en/1.jpg" data-lang-src="assets/magnegap/{lang}/1.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Flipping polarity between spikes" data-tr-alt="Dikenler arasında kutup değiştirme"></button>
+        <button class="shot" type="button" data-tr-label="Yeni renkli bölgeler, büyüt" aria-label="Zones with new colours, enlarge"><img src="assets/magnegap/en/2.jpg" data-lang-src="assets/magnegap/{lang}/2.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Zones with new colours" data-tr-alt="Yeni renkli bölgeler"></button>
+        <button class="shot" type="button" data-tr-label="Kaçılacak engeller, büyüt" aria-label="Obstacles to dodge, enlarge"><img src="assets/magnegap/en/3.jpg" data-lang-src="assets/magnegap/{lang}/3.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Obstacles to dodge" data-tr-alt="Kaçılacak engeller"></button>
+        <button class="shot" type="button" data-tr-label="Top marketi, büyüt" aria-label="Ball shop, enlarge"><img src="assets/magnegap/en/4.jpg" data-lang-src="assets/magnegap/{lang}/4.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="Ball shop" data-tr-alt="Top marketi"></button>
+        <button class="shot" type="button" data-tr-label="Yeni rekor ekranı, büyüt" aria-label="New high score screen, enlarge"><img src="assets/magnegap/en/5.jpg" data-lang-src="assets/magnegap/{lang}/5.jpg" width="600" height="1067" loading="lazy" decoding="async" alt="New high score screen" data-tr-alt="Yeni rekor ekranı"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy" id="privacy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <h2 class="h-sub" id="privacy-title" data-tr="Gizlilik">Privacy</h2>
+      <p class="privacy-intro" data-tr="Üç oyun için de geçerli olan özet aşağıda. Her oyunun ayrıntıları kendi politika sayfasında, Türkçe ve İngilizce olarak yer alıyor.">Here is the short version that applies to all three games. Each game’s details are on its own policy page, in English and Turkish.</p>
+      <ul class="promises">
+        <li><b data-tr="Hesap yok">No account</b><span data-tr="Oynamak için kayıt olman veya giriş yapman gerekmez.">You never need to sign up or log in to play.</span></li>
+        <li><b data-tr="İlerleme cihazında">Progress stays on your device</b><span data-tr="Skorun ve ayarların telefonunda saklanır, bize gönderilmez.">Your scores and settings are saved on your phone and never sent to us.</span></li>
+        <li><b data-tr="Reklamlar Google’dan">Ads come from Google</b><span data-tr="AdMob; reklam kimliği gibi verileri reklam göstermek ve ölçmek için işleyebilir.">AdMob may process data such as your advertising ID to show and measure ads.</span></li>
+        <li><b data-tr="Ödemeler Google Play’de">Payments stay with Google Play</b><span data-tr="Ödeme bilgilerini görmüyor ve saklamıyoruz.">We never see or store your payment details.</span></li>
+      </ul>
+      <div class="policy-links">
+        <a class="btn" href="privacy/paradox-block.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/></svg>Paradox Block</a>
+        <a class="btn" href="privacy/cyberorb.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/></svg>CyberOrb</a>
+        <a class="btn" href="privacy/magnegap.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l8 3v6c0 4.500-3.200 7.800-8 9-4.800-1.200-8-4.500-8-9V6z"/></svg>MagneGap</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div>
+        <h2 id="contact-title" data-tr="Bize yaz">Write to us</h2>
+        <p data-tr="Hata bildirimi, öneri veya gizlilik sorusu için.">Bug reports, ideas or privacy questions.</p>
+      </div>
+      <a class="mail" href="mailto:mkgames.feedback@gmail.com">mkgames.feedback@gmail.com</a>
+    </div>
+  </section>
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 MK GAMES</span>
+    <span data-tr="Google Play, Google LLC’nin ticari markasıdır.">Google Play is a trademark of Google LLC.</span>
+  </div>
+</footer>
+
+<dialog class="viewer" data-tr-label="Ekran görüntüsü" aria-label="Screenshot">
+  <img src="data:," alt="">
+  <button class="v-btn v-close" type="button" data-tr-label="Kapat" aria-label="Close">✕</button>
+  <button class="v-btn v-prev" type="button" data-tr-label="Önceki" aria-label="Previous">‹</button>
+  <button class="v-btn v-next" type="button" data-tr-label="Sonraki" aria-label="Next">›</button>
+</dialog>
+<script src="assets/main.js"></script>
 </body>
 </html>
