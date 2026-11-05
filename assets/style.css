@@ -103,6 +103,7 @@ a.btn-play:hover { border-color: var(--accent); }
 .promises b { display: block; margin-bottom: 4px; font: italic 700 22px/1.2 var(--display); }
 .promises span { color: var(--muted); font-size: 15.5px; line-height: 1.5; display: block; }
 .policy-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
+.terms { padding-top: 0; }
 .contact { background: var(--brand); color: var(--ink); padding-block: clamp(44px, 6vw, 72px); }
 .contact .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; }
 .contact h2 { font-size: clamp(32px, 5vw, 56px); }
