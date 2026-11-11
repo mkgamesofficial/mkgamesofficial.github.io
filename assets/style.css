@@ -86,7 +86,7 @@ a.btn-play:hover { border-color: var(--accent); }
 .shot:hover { transform: translateY(-5px); box-shadow: 0 0 0 2px var(--accent); }
 .shot:focus-visible { outline-offset: 2px; border-radius: 14px; }
 
-.t-paradox { --accent: #29e4ff; --accent-2: #ff4fd8; --bg: radial-gradient(70% 55% at 88% 6%, rgba(255, 79, 216, .24), transparent 70%), radial-gradient(60% 50% at 4% 96%, rgba(41, 228, 255, .15), transparent 70%), #0a0518; }
+.t-paradox { --accent: #ffc83d; --accent-2: #ff5fa2; --bg: repeating-linear-gradient(135deg, rgba(255, 255, 255, .035) 0 26px, transparent 26px 52px), radial-gradient(70% 55% at 88% 6%, rgba(255, 95, 162, .26), transparent 70%), radial-gradient(60% 50% at 4% 96%, rgba(56, 200, 255, .16), transparent 70%), #26114f; }
 .t-paradox h2 span { color: var(--accent-2); }
 .t-cyber { --accent: #5fe3cb; --accent-2: #a78bfa; --bg: radial-gradient(1.5px 1.5px at 12% 18%, #fff 50%, transparent 52%), radial-gradient(1.5px 1.5px at 72% 9%, #fff 50%, transparent 52%), radial-gradient(1px 1px at 36% 44%, #cfd6ff 50%, transparent 52%), radial-gradient(2px 2px at 91% 38%, #fff 50%, transparent 52%), radial-gradient(1px 1px at 55% 72%, #cfd6ff 50%, transparent 52%), radial-gradient(1.5px 1.5px at 7% 82%, #fff 50%, transparent 52%), radial-gradient(1px 1px at 84% 88%, #cfd6ff 50%, transparent 52%), radial-gradient(65% 60% at 76% 22%, rgba(82, 72, 200, .42), transparent 72%), #070a1f; }
 .t-cyber h2 span { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: .08em; }
